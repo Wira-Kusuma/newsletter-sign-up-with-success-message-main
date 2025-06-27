@@ -25,8 +25,9 @@ img, button, input::placeholder {
 
 main {
     width: 60%;
-    height: 75vh;
-    margin: 5rem auto;
+    height: fit-content;
+    margin: auto;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,7 +136,8 @@ button:hover {
 
 @media screen and (max-width:1200px) {
     main {
-        width: 80%;
+        width: 95%;
+        height: 75vh;
     }
 }
 
