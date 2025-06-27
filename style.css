@@ -1,0 +1,134 @@
+* {
+    font-family: 'Roboto',arial;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red:hsl(4, 100%, 67%);
+    --background:hsl(235, 18%, 26%);
+    --blue-button:hsl(234, 29%, 20%);
+}
+
+body {
+    background-color: var(--background);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img {
+    user-select: none;
+}
+
+main {
+    width: 60%;
+    height: 75vh;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.content {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+.image {
+    width: 50%;
+    height: 70vh;
+}
+
+.image img {
+    width: 100%;
+    height: 70vh;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.list img {
+    width: 20px;
+    height: 20px;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.top {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top p{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+input {
+    all: unset;
+    width: 100%;
+    height: 2.3rem;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+input::placeholder {
+    font-size: 0.8rem;
+}
+
+input:focus {
+    outline: 1px black;
+    border: 1px solid black;
+    outline-color: black;
+}
+
+button {
+    all: unset;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    padding: 0.8rem 0;
+    background-color: var(--blue-button);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(120deg, var(--red), rgba(248, 142, 80, 0.918));
+    box-shadow: 0 5px 20px 0.1px var(--red);
+}
