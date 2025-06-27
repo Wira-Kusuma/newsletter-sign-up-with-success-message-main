@@ -19,7 +19,7 @@ body {
     overflow: hidden;
 }
 
-img {
+img, button, input::placeholder {
     user-select: none;
 }
 
@@ -131,4 +131,46 @@ button {
 button:hover {
     background: linear-gradient(120deg, var(--red), rgba(248, 142, 80, 0.918));
     box-shadow: 0 5px 20px 0.1px var(--red);
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    body {
+        width: 100%;
+        height: auto;
+        overflow-y: auto;
+    }
+    
+    main {
+        width: 100%;
+        height:110vh;
+        flex-direction: column-reverse;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .image {
+        width: 100%;
+        height: 40vh;
+        background-image: url(assets/images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .image img {
+        display: none !important;
+    }
+
+    .content {
+        width: 100%;
+        height: 70vh;
+    }
 }
