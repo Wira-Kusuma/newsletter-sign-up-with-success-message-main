@@ -48,7 +48,7 @@ main {
 }
 .image {
     width: 50%;
-    height: 70vh;
+    height: fit-content;
 }
 
 .image img {
@@ -176,6 +176,24 @@ button:hover {
 
 .show {display: flex;}
 
+footer {
+    margin: auto;
+    width: fit-content;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.6rem;
+    font-weight: 700;
+}
+
 @keyframes closing {
     from {
         opacity: 1;
@@ -247,5 +265,10 @@ button:hover {
     .modal {
         width: 80%;
         height: fit-content;
+    }
+
+    footer {
+        bottom: -150px;
+        text-align: center;
     }
 }
