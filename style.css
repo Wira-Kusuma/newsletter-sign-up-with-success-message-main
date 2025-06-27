@@ -134,10 +134,78 @@ button:hover {
     box-shadow: 0 5px 20px 0.1px var(--red);
 }
 
+.error {
+    background-color: rgba(255, 170, 170, 0.301);
+    border: 1px solid red;
+}
+
+.closing {
+    animation: ease-in-out forwards 0.3s closing;
+}
+.showing {
+    animation: ease-in-out forwards 0.3s showing;
+}
+
+.modal {
+    margin: 5rem auto;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 40%;
+    height: fit-content;
+    gap: 20px;
+}
+
+.modal h1 {
+    font-size: 2.5rem;
+}
+
+.modal img {
+    width: 50px;
+    height: 50px;
+}
+
+.userEmail {
+    font-weight: 700;
+}
+
+.hide {display: none;}
+
+.show {display: flex;}
+
+@keyframes closing {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+@keyframes showing {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media screen and (max-width:1200px) {
     main {
         width: 95%;
         height: 75vh;
+    }
+
+    .modal {
+        width: 50%;
+        height: fit-content;
     }
 }
 
@@ -150,7 +218,7 @@ button:hover {
     
     main {
         width: 100%;
-        height:110vh;
+        height:120vh;
         flex-direction: column-reverse;
         border-radius: 0;
         margin: 0;
@@ -173,6 +241,11 @@ button:hover {
 
     .content {
         width: 100%;
-        height: 70vh;
+        height: 80vh;
+    }
+
+    .modal {
+        width: 80%;
+        height: fit-content;
     }
 }
