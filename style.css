@@ -24,7 +24,7 @@ img, button, input::placeholder {
 }
 
 main {
-    width: 60%;
+    width: 65%;
     height: fit-content;
     margin: auto;
     margin-top: 3rem;
@@ -217,8 +217,8 @@ footer p {
 
 @media screen and (max-width:1200px) {
     main {
-        width: 95%;
-        height: 75vh;
+        width: 90%;
+        height: fit-content;
     }
 
     .modal {
