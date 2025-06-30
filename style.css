@@ -221,6 +221,18 @@ footer p {
     }
 }
 
+@media screen and (max-width:1600px) and (max-height:600px) {
+    main {
+        width: 70%;
+        height: 50vh;
+        margin-top: 20rem;
+    }
+    
+    .image {
+        height: 45vh;
+    }
+}
+
 @media screen and (max-width:1200px) {
     main {
         width: 95%;
